@@ -1,0 +1,77 @@
+/*
+Theme Name: TPYTS
+Theme URI: https://tupideyotesirvo.com/tpyts
+Author: Bracnoria Team
+Author URI: https://tupideyotesirvo.com/
+Description: Tu pide yo te sirvo Theme
+Version: 0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tpyts
+*/
+@font-face {
+  font-family: "Roboto Condensed Light";
+  src: url(fonts/RobotoCondensed-Light.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Condensed Regular";
+  src: url(fonts/RobotoCondensed-Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url(fonts/RobotoCondensed-Bold.ttf) format("truetype"); }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Roboto Condensed Regular"; }
+
+#Navigation,
+#TPYTS {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+#Navigation {
+  bottom: auto;
+  height: 40px;
+  z-index: 1;
+  box-shadow: 0 0 12px #000; }
+
+#TPYTS {
+  top: 40px;
+  overflow: auto;
+  z-index: 0; }
+
+#header {
+  display: none; }
+
+#Navigation .menu-menu-principal-container {
+  padding: 4px 16px 0; }
+  #Navigation .menu-menu-principal-container .menu {
+    list-style: none;
+    margin: 8px 0;
+    padding: 0;
+    text-align: right; }
+    #Navigation .menu-menu-principal-container .menu li,
+    #Navigation .menu-menu-principal-container .menu a {
+      display: inline-block; }
+    #Navigation .menu-menu-principal-container .menu li.current-menu-item a {
+      font-family: "Roboto Condensed Light";
+      color: rgba(4, 122, 0, 0.486); }
+    #Navigation .menu-menu-principal-container .menu li + li {
+      margin: 0 0 0 8px; }
+    #Navigation .menu-menu-principal-container .menu a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #047a00;
+      font-family: "Roboto Condensed Bold"; }
+
+#TPYTS {
+  padding: 40px; }
+

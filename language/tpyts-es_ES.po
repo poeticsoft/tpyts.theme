@@ -1,0 +1,17 @@
+# Translation of Plugins - TPYTS - Spanish (Spain)
+# This file is distributed under the same license as the TPYTS package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-04-25 17:02:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - TPYTS"
+
+#: page.php:XXX
+msgid "KEY"
+msgstr "Traducción"
+

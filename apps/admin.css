@@ -1,0 +1,33 @@
+#wpwrap,
+#wpcontent,
+#wpbody {
+  height: 100%; }
+
+#wpbody-content {
+  height: calc(100% - 70px); }
+
+#TPYTSAdmin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 20px;
+  overflow: hidden;
+  bottom: 36px; }
+
+#TPYTSAdmin .Message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: auto;
+  padding: 8px 16px;
+  background-color: #ccc;
+  text-align: right; }
+  #TPYTSAdmin .Message.info {
+    background-color: #0f0; }
+  #TPYTSAdmin .Message.fail {
+    background-color: #f00; }
+
