@@ -1,35 +1,32 @@
 <?php
 
-function tpyts_test() {
+require_once(dirname(__FILE__) . '/test.php');
+require_once(dirname(__FILE__) . '/data.php');
 
-  $res = new WP_REST_Response();
+function tpyts_api_bearer_auth_unauthenticated_urls_filter(
+  $custom_urls, 
+  $request_method
+) {
 
-  try { 
+  switch ($request_method) {
 
-    $res->set_data('tpyts');
-    
-  } catch (Exception $e) {
-    
-    $res->set_status($e->getCode());
-    $res->set_data($e->getMessage());
+    case 'POST':
+
+      break;
+
+    case 'GET':
+
+      $custom_urls[] = '/wp-json/tpyts/data';
+
+      break;
   }
 
-  return $res;
+  return $custom_urls;
 }
 
-add_action(
-  'rest_api_init',
-  function () {
-
-    register_rest_route(
-      'tpyts',
-      'test',
-      array(
-        array(
-          'methods'  => 'GET',
-          'callback' => 'tpyts_test'
-        )
-      )
-    );
-  }
+add_filter(
+  'api_bearer_auth_unauthenticated_urls', 
+  'tpyts_api_bearer_auth_unauthenticated_urls_filter', 
+  10, 
+  2
 );

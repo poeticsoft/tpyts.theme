@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #wpwrap,
 #wpcontent,
 #wpbody {
@@ -16,6 +17,58 @@
   overflow: hidden;
   bottom: 36px; }
 
+.AdminMenu,
+.AdminFront {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.AdminMenu {
+  bottom: auto;
+  height: 48px; }
+
+.AdminFront {
+  top: 48px; }
+  .AdminFront .Front {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: 12px; }
+    .AdminFront .Front .Table {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+    .AdminFront .Front.WithTools .Table {
+      top: 40px; }
+    .AdminFront .Front .Tools {
+      text-align: right; }
+    .AdminFront .Front .ant-table-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+      .AdminFront .Front .ant-table-wrapper .ant-spin-nested-loading,
+      .AdminFront .Front .ant-table-wrapper .ant-spin-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; }
+      .AdminFront .Front .ant-table-wrapper º
+.ant-table,
+      .AdminFront .Front .ant-table-wrapper .ant-table-container {
+        height: 100%; }
+      .AdminFront .Front .ant-table-wrapper .ant-table-body {
+        height: calc(100% - 38px);
+        border: solid #f0f0f0;
+        border-width: 0 0 1px 0; }
+
 #TPYTSAdmin .Message {
   position: absolute;
   top: 0;
@@ -31,3 +84,5 @@
   #TPYTSAdmin .Message.fail {
     background-color: #f00; }
 
+
+/*# sourceMappingURL=admin.css.map*/
