@@ -4,9 +4,8 @@
 
 $types = array(
   'provider',
-  'shop',
-  'service',
-  'dealer'
+  'store',
+  'service'
 );
 
 foreach($types as $type) {  
@@ -25,7 +24,7 @@ foreach($types as $type) {
   );
 }
  
-// Types
+/* Types
 
 function tpyts_types_menu() {
 
@@ -44,5 +43,7 @@ add_action(
   'admin_menu',
   'tpyts_types_menu'
 );
+
+*/
 
 ?>

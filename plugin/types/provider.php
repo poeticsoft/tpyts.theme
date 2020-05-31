@@ -5,7 +5,7 @@ function tpyts_types_provider_register() {
   $args = array(
     'public' => true,
     'show_ui' => true, 
-    'show_in_menu' => 'tpyts-types',
+    'show_in_menu' => true,
     'labels' => array(
       'name' => __('Providers', 'tpyts'),
       'singular_name' => __('Provider', 'tpyts')
@@ -22,7 +22,11 @@ function tpyts_types_provider_register() {
     'taxonomies' => array(
       'category',
       'post_tag'
-    )
+    ),
+    'template' => array(
+      array('tpyts/providerbasic', array())
+    ),
+    'template_lock' => 'insert'
   );
 
   register_post_type(

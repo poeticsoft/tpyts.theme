@@ -75,3 +75,18 @@ body {
 #TPYTS {
   padding: 40px; }
 
+.Message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: auto;
+  padding: 16px 32px;
+  background-color: #ccc;
+  text-align: right; }
+  .Message.info {
+    background-color: #0f0; }
+  .Message.fail {
+    background-color: #f00; }
+

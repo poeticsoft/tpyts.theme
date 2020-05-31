@@ -2,54 +2,19 @@
 
 /* GET GAMES */
 
-function tpyts_data() {
+function tpyts_get_data() {
 
   $res = new WP_REST_Response();
 
-  $wpfields = array(
-    'ID',
-    'post_title',
-    'post_excerpt'
-  );
-
-  $wptypes = array(
-    'provider',
-    'shop',
-    'service',
-    'dealer'
-  );
+  $siteurl = get_site_url();
 
   $data = new stdClass();
 
   try {
 
-    foreach($wptypes as $wptype) {      
-
-      $args = array(
-        'numberposts' => -1,
-        'post_type' => $wptype
-      );
-    
-      $typesname = $wptype . 's';
-      $typesdata = [];
-      $types = get_posts($args);
-
-      foreach($types as $type) {
-
-        $typedata = array_filter(
-          (array) $type,
-          function ($key) use ($wpfields){
-  
-            return in_array($key, $wpfields);
-          },
-          ARRAY_FILTER_USE_KEY
-        );
-
-        $typesdata[] = $typedata;
-      }
-
-      $data->$typesname = $typesdata;
-    }
+    $customlogoid = get_theme_mod('custom_logo');
+    $logourl = wp_get_attachment_image_src($customlogoid , 'full')[0];
+    $data->logo = str_replace($siteurl, '', $logourl);
 
     $res->set_data($data);
     
@@ -72,7 +37,7 @@ add_action(
       array(
         array(
           'methods'  => 'GET',
-          'callback' => 'tpyts_data'
+          'callback' => 'tpyts_get_data'
         )
       )
     );

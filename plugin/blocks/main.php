@@ -2,7 +2,7 @@
 
 /* CATEGORY */
 
-function tpyts_category($categories, $post) {
+function tpyts_blocks_category($categories, $post) {
 
   return array_merge(
     $categories,
@@ -20,7 +20,7 @@ function tpyts_category($categories, $post) {
 
 add_filter(
   'block_categories',
-  'tpyts_category',
+  'tpyts_blocks_category',
   10,
   2
 );
@@ -35,15 +35,11 @@ add_filter(
   switch ($post->post_type) {
 
     case 'provider':
-    case 'shop':
+    case 'store':
     case 'service':
-    case 'dealer':
 
-      $allowed_blocks = array();
-      $allowed_blocks[] = 'core/heading';
-      $allowed_blocks[] = 'core/paragraph';
-      $allowed_blocks[] = 'core/image';
-      $allowed_blocks[] = 'core/gallery';
+      // $allowed_blocks = array();
+      // $allowed_blocks[] = 'tpyts/app';
 
       break;      
     
@@ -66,7 +62,10 @@ add_filter(
 
 // App
 
-require_once(dirname(__FILE__) . '/app/main.php');
+require_once(dirname(__FILE__) . '/providerbasic/main.php');
+require_once(dirname(__FILE__) . '/storebasic/main.php');
+require_once(dirname(__FILE__) . '/servicebasic/main.php');
+
 
 
 

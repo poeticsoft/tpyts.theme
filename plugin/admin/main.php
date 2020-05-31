@@ -34,4 +34,6 @@ add_action(
   'tpyts_add_admin_menu'
 );
 
+require_once(dirname(__FILE__) . '/metaboxes.php');
+
 

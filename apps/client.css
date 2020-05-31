@@ -1,4 +1,368 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto Condensed Regular";
   src: url(../fonts/RobotoCondensed-Regular.ttf) format("truetype"); }
 
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url(../fonts/RobotoCondensed-Bold.ttf) format("truetype"); }
+
+html,
+body {
+  padding: 0; }
+
+#TPYTSClient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  #TPYTSClient .Showcase {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 16px;
+    z-index: 0;
+    overflow-y: auto; }
+  #TPYTSClient .Map {
+    background-color: #fff;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    bottom: 32px;
+    left: 32px;
+    z-index: 1; }
+  #TPYTSClient .Gallery {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1; }
+
+.ant-drawer-body {
+  position: relative; }
+
+#TPYTSClient .ant-table-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  #TPYTSClient .ant-table-wrapper .ant-spin-nested-loading,
+  #TPYTSClient .ant-table-wrapper .ant-spin-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  #TPYTSClient .ant-table-wrapper .ant-table,
+  #TPYTSClient .ant-table-wrapper .ant-table-container {
+    height: 100%; }
+  #TPYTSClient .ant-table-wrapper .ant-table-body {
+    height: calc(100% - 38px);
+    border: solid #f0f0f0;
+    border-width: 0 0 1px 0; }
+
+.Showcase.Stores .ant-collapse >
+.ant-collapse-item >
+.ant-collapse-header {
+  padding: 0; }
+  .Showcase.Stores .ant-collapse >
+.ant-collapse-item >
+.ant-collapse-header .ant-collapse-arrow {
+    position: absolute;
+    top: unset;
+    left: 16px;
+    bottom: 16px;
+    font-size: 16px;
+    -webkit-transform: none;
+    transform: none;
+    color: #008f36; }
+    .Showcase.Stores .ant-collapse >
+.ant-collapse-item >
+.ant-collapse-header .ant-collapse-arrow:after,
+    .Showcase.Stores .ant-collapse >
+.ant-collapse-item >
+.ant-collapse-header .ant-collapse-arrow svg {
+      display: inline-block;
+      vertical-align: middle; }
+    .Showcase.Stores .ant-collapse >
+.ant-collapse-item >
+.ant-collapse-header .ant-collapse-arrow:after {
+      content: "menu";
+      font-family: "Roboto Condensed Regular";
+      font-size: 80%;
+      margin: 0 0 0 4px; }
+
+.Showcase.Stores .Cover {
+  position: relative;
+  padding: 16px;
+  z-index: 0; }
+  .Showcase.Stores .Cover .Logo,
+  .Showcase.Stores .Cover .Data {
+    display: inline-block;
+    vertical-align: top; }
+  .Showcase.Stores .Cover .Logo {
+    width: 80px;
+    height: 80px;
+    background-color: #ffec00;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .Showcase.Stores .Cover .Data {
+    width: calc(100% - 80px);
+    padding: 0 0 0 16px; }
+    .Showcase.Stores .Cover .Data .Info {
+      min-height: 72px; }
+      .Showcase.Stores .Cover .Data .Info .Title {
+        font-family: "Roboto Condensed Bold";
+        font-size: 180%; }
+      .Showcase.Stores .Cover .Data .Info .Excerpt {
+        font-size: 90%; }
+    .Showcase.Stores .Cover .Data .Address {
+      margin: 8px 0 0;
+      border: dotted #ccc;
+      border-width: 1px 0 0 0;
+      padding: 8px 0 0; }
+      .Showcase.Stores .Cover .Data .Address button,
+      .Showcase.Stores .Cover .Data .Address .Texts {
+        display: inline-block;
+        vertical-align: middle; }
+      .Showcase.Stores .Cover .Data .Address .Texts {
+        font-size: 80%;
+        width: calc(100% - 32px);
+        padding: 0 0 0 8px; }
+        .Showcase.Stores .Cover .Data .Address .Texts .AddressStreet,
+        .Showcase.Stores .Cover .Data .Address .Texts .AddressNumber {
+          display: inline-block; }
+  .Showcase.Stores .Cover .Tools {
+    padding: 16px 0 0 0;
+    text-align: right; }
+    .Showcase.Stores .Cover .Tools button + button {
+      margin: 0 0 0 8px; }
+
+.Showcase.Stores .ant-collapse-content .ant-collapse-content-box {
+  padding: 8px; }
+  .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 8px; }
+    .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Image {
+      width: 100%;
+      padding: 0 0 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data {
+      padding: 8px 0; }
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Name {
+        font-family: "Roboto Condensed Bold";
+        font-size: 120%; }
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Excerpt {
+        font-size: 85%;
+        display: none; }
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Components {
+        font-size: 85%; }
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens {
+        padding: 0 0 8px 0;
+        margin: 8px 0;
+        border: solid #ccc;
+        border-width: 1px 0; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens:before {
+          content: "Alérgenos";
+          display: block; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen {
+          width: 10%;
+          padding: 0 0 10% 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          display: inline-block; }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_000 {
+            background-image: url(../assets/000.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_001 {
+            background-image: url(../assets/001.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_002 {
+            background-image: url(../assets/002.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_003 {
+            background-image: url(../assets/003.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_004 {
+            background-image: url(../assets/004.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_005 {
+            background-image: url(../assets/005.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_006 {
+            background-image: url(../assets/006.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_007 {
+            background-image: url(../assets/007.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_008 {
+            background-image: url(../assets/008.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_009 {
+            background-image: url(../assets/009.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_010 {
+            background-image: url(../assets/010.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_011 {
+            background-image: url(../assets/011.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_012 {
+            background-image: url(../assets/012.png); }
+          .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Allergens .Allergen.A_013 {
+            background-image: url(../assets/013.png); }
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Price .Comments,
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Price .NumberCurrency {
+        display: inline-block;
+        vertical-align: top; }
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Price .Comments {
+        font-size: 80%;
+        width: calc(100% - 70px); }
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Price .NumberCurrency {
+        width: calc(100% - 70px - 4px);
+        margin: 0 0 0 4px;
+        text-align: right; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Price .NumberCurrency .Number {
+          font-family: "Roboto Condensed Bold";
+          font-size: 240%;
+          line-height: 100%; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Price .NumberCurrency .Currency {
+          font-family: "Roboto Condensed Bold";
+          font-size: 100%; }
+      .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity {
+        text-align: right;
+        border: dotted #ccc;
+        border-width: 0 0 1px 0;
+        padding: 8px 0; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity .Text,
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity button.Down,
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity .Number,
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity button.Up,
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity button.Add {
+          display: inline-block;
+          vertical-align: middle; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity button.Down,
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity button.Up,
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity button.Add {
+          padding: 0; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity .Text {
+          font-family: "Roboto Condensed Bold";
+          font-size: 120%;
+          padding: 0 4px; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity .Number {
+          font-family: "Roboto Condensed Bold";
+          font-size: 150%;
+          padding: 0 4px; }
+        .Showcase.Stores .ant-collapse-content .ant-collapse-content-box .Service .Data .Quantity button.Add {
+          margin: 0 0 0 8px; }
+
+.Map {
+  border: solid 1px #ccc;
+  box-shadow: 0 0 12px #000; }
+  .Map .Header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    bottom: auto;
+    height: 48px; }
+    .Map .Header .Text {
+      font-family: "Roboto Condensed Bold";
+      float: left;
+      line-height: 250%;
+      padding: 0 0 0 8px; }
+    .Map .Header .Tools {
+      float: right; }
+  .Map .Google {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 48px; }
+  .Map .Target {
+    font-size: 200%;
+    color: #008f36; }
+
+.Gallery {
+  text-align: center; }
+  .Gallery:before,
+  .Gallery .Wrapper {
+    display: inline-block;
+    vertical-align: middle; }
+  .Gallery:before {
+    content: "";
+    width: 0;
+    height: 100%; }
+  .Gallery .Wrapper {
+    width: 90%; }
+    .Gallery .Wrapper .Header {
+      padding: 8px;
+      bottom: auto;
+      height: 48px;
+      background-color: #fff; }
+      .Gallery .Wrapper .Header .Text {
+        font-family: "Roboto Condensed Bold";
+        float: left;
+        line-height: 250%;
+        padding: 0 0 0 8px; }
+      .Gallery .Wrapper .Header .Tools {
+        float: right; }
+    .Gallery .Wrapper .Carousel {
+      width: 100%;
+      padding: 0 0 100% 0;
+      position: relative;
+      background-color: #000; }
+      .Gallery .Wrapper .Carousel .ant-carousel {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; }
+        .Gallery .Wrapper .Carousel .ant-carousel .slick-slider,
+        .Gallery .Wrapper .Carousel .ant-carousel .slick-list,
+        .Gallery .Wrapper .Carousel .ant-carousel .slick-track,
+        .Gallery .Wrapper .Carousel .ant-carousel .slick-slide {
+          height: 100%; }
+        .Gallery .Wrapper .Carousel .ant-carousel .slick-slide {
+          position: relative; }
+          .Gallery .Wrapper .Carousel .ant-carousel .slick-slide > div,
+          .Gallery .Wrapper .Carousel .ant-carousel .slick-slide .Slide {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; }
+          .Gallery .Wrapper .Carousel .ant-carousel .slick-slide .Slide .Image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; }
+    .Gallery .Wrapper .Info {
+      padding: 16px 16px 8px;
+      background-color: #fff; }
+
+#TPYTSClient .Message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: auto;
+  padding: 8px 16px;
+  background-color: #ccc;
+  text-align: right; }
+  #TPYTSClient .Message.info {
+    background-color: #0f0; }
+  #TPYTSClient .Message.fail {
+    background-color: #f00; }
+
+
+/*# sourceMappingURL=client.css.map*/

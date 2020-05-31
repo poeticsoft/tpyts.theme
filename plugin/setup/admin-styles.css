@@ -3,87 +3,91 @@
   width: 160px;
 }
 
-/* BLOCKS */
+/* Editor */
 
-.edit-po.editor-post-title__block.editor-post-title__block {
+.wp-block.editor-post-title__block {
 
   margin-bottom: 0;
 }
 
-.wp-block {
-  
-  border: solid #ccc;
-  border-width: 8px 0 0;
-  padding: 10px 0 0;
-}
-
-.wp-block.is-reusable {
-
-  padding: 0 10px;
-  border-color: rgb(122, 200, 59);
-  border-width: 12px 1px 1px;
-  border-style: solid dotted dotted;
-}
-
-.wp-block[data-type="core/group"] {
-
-  padding: 0 10px 0;
-  border-color: rgb(230, 152, 63);
-  border-width: 12px 1px 1px;
-  border-style: solid dotted dotted;
-}
-
-.wp-block[data-type="core/paragraph"] {
-
-  border-width: 0 0 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.wp-block[data-type="core/heading"],
-.wp-block[data-type="core/image"],
-.editor-styles-wrapper.editor-styles-wrapper h2,
-.editor-styles-wrapper.editor-styles-wrapper h3,
-.editor-styles-wrapper.editor-styles-wrapper h4,
-.editor-styles-wrapper.editor-styles-wrapper h5,
-.editor-styles-wrapper.editor-styles-wrapper h6 {
+.editor-styles-wrapper .block-editor-block-list__block {
 
   margin-top: 0;
-  margin-bottom: 0;
-} 
+  margin-bottom: 10px;
+}
+
+.components-modal__frame .input-control, .components-modal__frame input[type=checkbox], .components-modal__frame input[type=color], .components-modal__frame input[type=date], .components-modal__frame input[type=datetime-local], .components-modal__frame input[type=datetime], .components-modal__frame input[type=email], .components-modal__frame input[type=month], .components-modal__frame input[type=number], .components-modal__frame input[type=password], .components-modal__frame input[type=radio], .components-modal__frame input[type=search], .components-modal__frame input[type=tel], .components-modal__frame input[type=text], .components-modal__frame input[type=time], .components-modal__frame input[type=url], .components-modal__frame input[type=week], .components-modal__frame select, .components-modal__frame textarea, .components-popover .input-control, .components-popover input[type=checkbox], .components-popover input[type=color], .components-popover input[type=date], .components-popover input[type=datetime-local], .components-popover input[type=datetime], .components-popover input[type=email], .components-popover input[type=month], .components-popover input[type=number], .components-popover input[type=password], .components-popover input[type=radio], .components-popover input[type=search], .components-popover input[type=tel], .components-popover input[type=text], .components-popover input[type=time], .components-popover input[type=url], .components-popover input[type=week], .components-popover select, .components-popover textarea, .edit-post-header .input-control, .edit-post-header input[type=checkbox], .edit-post-header input[type=color], .edit-post-header input[type=date], .edit-post-header input[type=datetime-local], .edit-post-header input[type=datetime], .edit-post-header input[type=email], .edit-post-header input[type=month], .edit-post-header input[type=number], .edit-post-header input[type=password], .edit-post-header input[type=radio], .edit-post-header input[type=search], .edit-post-header input[type=tel], .edit-post-header input[type=text], .edit-post-header input[type=time], .edit-post-header input[type=url], .edit-post-header input[type=week], .edit-post-header select, .edit-post-header textarea, .edit-post-sidebar .input-control, .edit-post-sidebar input[type=checkbox], .edit-post-sidebar input[type=color], .edit-post-sidebar input[type=date], .edit-post-sidebar input[type=datetime-local], .edit-post-sidebar input[type=datetime], .edit-post-sidebar input[type=email], .edit-post-sidebar input[type=month], .edit-post-sidebar input[type=number], .edit-post-sidebar input[type=password], .edit-post-sidebar input[type=radio], .edit-post-sidebar input[type=search], .edit-post-sidebar input[type=tel], .edit-post-sidebar input[type=text], .edit-post-sidebar input[type=time], .edit-post-sidebar input[type=url], .edit-post-sidebar input[type=week], .edit-post-sidebar select, .edit-post-sidebar textarea, .edit-post-text-editor .input-control, .edit-post-text-editor input[type=checkbox], .edit-post-text-editor input[type=color], .edit-post-text-editor input[type=date], .edit-post-text-editor input[type=datetime-local], .edit-post-text-editor input[type=datetime], .edit-post-text-editor input[type=email], .edit-post-text-editor input[type=month], .edit-post-text-editor input[type=number], .edit-post-text-editor input[type=password], .edit-post-text-editor input[type=radio], .edit-post-text-editor input[type=search], .edit-post-text-editor input[type=tel], .edit-post-text-editor input[type=text], .edit-post-text-editor input[type=time], .edit-post-text-editor input[type=url], .edit-post-text-editor input[type=week], .edit-post-text-editor select, .edit-post-text-editor textarea, .edit-post-visual-editor .input-control, .edit-post-visual-editor input[type=checkbox], .edit-post-visual-editor input[type=color], .edit-post-visual-editor input[type=date], .edit-post-visual-editor input[type=datetime-local], .edit-post-visual-editor input[type=datetime], .edit-post-visual-editor input[type=email], .edit-post-visual-editor input[type=month], .edit-post-visual-editor input[type=number], .edit-post-visual-editor input[type=password], .edit-post-visual-editor input[type=radio], .edit-post-visual-editor input[type=search], .edit-post-visual-editor input[type=tel], .edit-post-visual-editor input[type=text], .edit-post-visual-editor input[type=time], .edit-post-visual-editor input[type=url], .edit-post-visual-editor input[type=week], .edit-post-visual-editor select, .edit-post-visual-editor textarea, .editor-post-publish-panel .input-control, .editor-post-publish-panel input[type=checkbox], .editor-post-publish-panel input[type=color], .editor-post-publish-panel input[type=date], .editor-post-publish-panel input[type=datetime-local], .editor-post-publish-panel input[type=datetime], .editor-post-publish-panel input[type=email], .editor-post-publish-panel input[type=month], .editor-post-publish-panel input[type=number], .editor-post-publish-panel input[type=password], .editor-post-publish-panel input[type=radio], .editor-post-publish-panel input[type=search], .editor-post-publish-panel input[type=tel], .editor-post-publish-panel input[type=text], .editor-post-publish-panel input[type=time], .editor-post-publish-panel input[type=url], .editor-post-publish-panel input[type=week], .editor-post-publish-panel select, .editor-post-publish-panel textarea {
+    
+  border-radius: 0;
+  border-color: #ccc;
+}
 
 .editor-styles-wrapper.editor-styles-wrapper p {
 
   margin-top: 0;
   margin-bottom: 10px;
-} 
+}
 
-/* Block Names */
+.components-base-control+.components-base-control {
 
-.wp-block-group:before {
+  margin-bottom: 0;
+}
 
-  display: inline-block;
-  content: "No Name";
+.components-base-control .components-base-control__field {
+  
+  margin-bottom: 0;
+}
+
+/* TPYTS Blocks */
+
+.TPYTSBlock {
+
+}
+
+.TPYTSBlock .SectionTitle {
+
+  font-weight: 600;
   margin: 0 0 10px 0;
-  padding: 5px 10px;
-  background-color: rgb(230, 152, 63);
-  color: #fff;
-} 
-
-.wp-block-group.HiddenName:before { 
-  
-  display: none;
+  border: solid #ccc;
+  border-width: 2px 0 0 0;
+  color: rgb(134, 134, 134);
 }
 
-.wp-block-group.HiddenName { 
-  
-  padding-top: 10px;
+.TPYTSBlock .Group {
+
+  border: dotted #ccc;
+  border-width: 1px 0 0 0;
+  margin: 0 0 20px;
 }
 
-/* Blocks */
+.TPYTSBlock .Group .GroupTitle {
 
-.wp-block-group.Cover:before { content: "COVER"; } 
+  font-size: 90%;
+}
 
-/* Group Helpers */ 
+.TPYTSBlock .Group .Field {
 
-.wp-block-group.ForCenter:before { content: "For Center"; } 
+  padding: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.TPYTSBlock .Group .Field .rich-text {
+
+  padding: 5px;
+  border: solid 1px #ccc;
+}
+
+.TPYTSBlock .G1 { width: 10%; }
+.TPYTSBlock .G2 { width: 20%; }
+.TPYTSBlock .G3 { width: 30%; }
+.TPYTSBlock .G4 { width: 40%; }
+.TPYTSBlock .G5 { width: 50%; }
+.TPYTSBlock .G6 { width: 60%; }
+.TPYTSBlock .G7 { width: 70%; }
+.TPYTSBlock .G8 { width: 80%; }
+.TPYTSBlock .G9 { width: 90%; }
+.TPYTSBlock .G10 { width: 100%; }
+
+.TPYTSBlock .IN { display: inline-block; vertical-align: top; }
+
